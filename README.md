@@ -14,8 +14,8 @@ W dalszym użytkowaniu program już samodzielnie cię poinstruuje ;)
 ## Twórcy
 
 - [Aleksander Baska](https://github.com/@baskaaleksander)
-- [Łukasz Bączkiewicz](https://github.com/@bonczur)
-- [Łukasz Zieliński](https://github.com/@zielu03)
+- [Łukasz Bączkiewicz](https://github.com/@vienox)
+- [Łukasz Zieliński](https://github.com/@zielu3)
 
 ## Licencja
 
