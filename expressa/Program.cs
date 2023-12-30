@@ -1,4 +1,4 @@
-﻿using Misc;
+using Misc;
 using System;
 using static Misc.addons;
 using System.Text;
@@ -424,7 +424,8 @@ namespace expressa
                     {
                         break;
                     }
-                    index++;
+                    else { index++; }
+                    
                 }
                 daneUzytkownikow daneUzytkownikow = bazaUzytkownikcy[index];
                 daneUzytkownikow.zmienSaldoUzytkownika();
@@ -445,7 +446,7 @@ namespace expressa
                 {
                     break;
                 }
-                index++;
+                else { index++; }
             }
             daneUzytkownikow daneUzytkownikow = bazaUzytkownikcy[index];
             daneUzytkownikow.doladujKontoUzytkownika();
@@ -463,7 +464,7 @@ namespace expressa
                 {
                     break;
                 }
-                index++;
+                else { index++; }
             }
             daneUzytkownikow daneUzytkownikow = bazaUzytkownikcy[index];
             if (daneUzytkownikow.saldoUzytkownika > 12)
@@ -674,9 +675,9 @@ namespace expressa
                 {
                     break;
                 }
-                 
-                indexx++; 
-                
+
+                else { index++; }
+
             }
             danePaczka paczka = danePaczek[indexx];
             paczka.dostarczone();
@@ -846,6 +847,7 @@ namespace expressa
 
         static void logowanie()
         {
+            bool brakUzytkownika = false;
             Console.WriteLine(logo);
             int login = addons.podajNumerTelefonu("Podaj numer telefonu: ");
             foreach (var uzytkownik in bazaUzytkownikcy)
@@ -883,24 +885,27 @@ namespace expressa
                 else
                 {
                     Console.WriteLine("Nie znaleziono użytkownika");
-                    bool takCzyNie = false;
-                    takCzyNie = addons.pytanie("Czy chcesz się zarejestrować?");
-                    if (takCzyNie == true)
+
+                    if (addons.pytanie("Czy chcesz się zarejestrować?"))
                     {
                         nowyUser();
+                        break;
                     }
                     else
                     {
                         Console.WriteLine("Do widzenia!");
+                        break;
                     }
                 }
 
             }
-            
-            
+
+
+
+
         }
 
-        
+
 
 
         static void Main(string[] args)
