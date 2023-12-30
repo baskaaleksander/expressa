@@ -9,11 +9,6 @@ Aby nadać sobie jakiekolwiek uprawnienia manualnie z poziomu pliku, należy naj
 - 1 - kurier
 - 2 - administrator
 
-Przykładowe konta (login:hasło)
-- 111111111:user
-- 222222222:kurier
-- 333333333:admin
-  
 W dalszym użytkowaniu program już samodzielnie cię poinstruuje ;)
 
 ## Twórcy
